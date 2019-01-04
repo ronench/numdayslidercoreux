@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">   
+   <head>
+      <title> dayes number AngularJS Application</title> 
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
+     <script>document.write('<base href="' + document.location + '" />');</script>
+      <script data-require="angular.js@1.5.7" data-semver="1.5.7" src="https://code.angularjs.org/1.5.7/angular.js"></script>
+           <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+      <script src="radioDaysNum.js"></script>
+   </head>
+   <body ng-app="radioDaysNum" >
+       <form name="mform" ng-controller="radioDaysNumController">
+      <label>please select number of days</label>
+      
+      <div >
+         <slider ng-value="5" ></slider>
+         <input type="radio" ng-model="radioDaysNumber" ng-value="1" ng-name="daysNum" selected="selected">
+         <input type="radio" ng-model="radioDaysNumber" ng-value="7" ng-name="daysNum" selected="selected">
+         <input type="radio" ng-model="radioDaysNumber" ng-value="14" ng-name="daysNum" selected="selected">
+         <input type="radio" ng-model="radioDaysNumber" ng-value="21" ng-name="daysNum" selected="selected">
+         <input type="radio" ng-model="radioDaysNumber" ng-value="28" ng-name="daysNum" selected="selected">
+<span>{{radioDaysNum.value}} - {{radioDaysNum.name}}{{2+2}}</span>
+      </div>
+       </form>
+ 
+ 
+   
+   </body>
+</html>
